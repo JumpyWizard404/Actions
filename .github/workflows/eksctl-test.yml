@@ -1,4 +1,4 @@
-name: Cmake-windows-test
+name: eksctl-test
 # Controls when the workflow will run
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -6,7 +6,7 @@ on:
   
 jobs:
  windows:
-    runs-on: windows-latest
+    runs-on: windows-2019
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
