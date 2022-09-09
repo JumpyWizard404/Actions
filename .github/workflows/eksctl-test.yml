@@ -1,4 +1,3 @@
-# Ekscctl install and version test
 name: eksctl-windows-test
 # Controls when the workflow will run
 on:
@@ -10,13 +9,12 @@ jobs:
     runs-on: windows-2019
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      -name: install-eksctl
-       run: |
-       choco install eksctl
-    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       # Runs a set of commands using the runners shell
+      - name: install-eksctl
+      - run: |
+         choco install eksct
       - name: Run a version test
         run: |
           $version = eksctl info
