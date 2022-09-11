@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   
 jobs:
- windows:
+ ubuntu2204:
     runs-on: ubuntu-22.04
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -16,5 +16,4 @@ jobs:
         run: |
           curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
           sudo mv /tmp/eksctl /usr/local/bin
-          $version = eksctl info
-          return "$version"
+
