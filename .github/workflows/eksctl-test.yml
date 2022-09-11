@@ -14,6 +14,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install
         run: |
-          choco install eksctl
+          # choco install eksctl
           $version = eksctl info
           return "$version"
