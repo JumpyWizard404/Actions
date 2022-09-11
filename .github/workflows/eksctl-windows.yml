@@ -17,3 +17,6 @@ jobs:
           choco install eksctl
           $version = eksctl info
           return "$version"
+          if ($version -ne "0.110") {
+           write-host "Eksctl is not the lastest version. Please update"
+            } 
