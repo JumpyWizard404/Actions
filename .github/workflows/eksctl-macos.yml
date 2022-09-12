@@ -15,4 +15,7 @@ jobs:
       - name: Install
         run: |
           brew install weaveworks/tap/eksctl
-          eksctl info
+      - name: Version
+        run: |
+          eksctl version
+          
