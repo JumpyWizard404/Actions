@@ -18,4 +18,4 @@ jobs:
           sudo mv /tmp/eksctl /usr/local/bin
       - name: Version
         run: |
-          eksctl info
+          eksctl version
